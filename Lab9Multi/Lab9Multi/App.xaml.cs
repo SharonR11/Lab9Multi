@@ -6,11 +6,15 @@ namespace Lab9Multi
 {
     public partial class App : Application
     {
+        public static float ScreenHeight { get; set; }
+        public static float ScreenWidth { get; set; }
+
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
+            DependencyService.Register<MockDataStore>();
+            //MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()
@@ -24,5 +28,9 @@ namespace Lab9Multi
         protected override void OnResume()
         {
         }
+    }
+
+    internal class MockDataStore
+    {
     }
 }

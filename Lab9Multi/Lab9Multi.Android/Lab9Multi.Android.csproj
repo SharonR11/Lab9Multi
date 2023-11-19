@@ -84,7 +84,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\lobo.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Lab9Multi\Lab9Multi.csproj">
       <Project>{181B2341-70DE-4A19-8E49-12B6980B52AD}</Project>
